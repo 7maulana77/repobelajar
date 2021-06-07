@@ -1,3 +1,5 @@
 Coba buat file kode kedua di cabang
-Editan di cabang 1 menambah baris kedua
+Editan di cabang menambah baris kedua
 dan menambah baris ketiga
+menambah baris keempat
+
