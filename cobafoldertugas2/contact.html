@@ -2,31 +2,49 @@
 <html>
     <head>
         <style text="text/css">
-        h1{text-align: center;}
-        body{padding-left:1em;border: 1px solid}
-        span{font-weight: bold;}
-        input{margin-top: 1.25em;}
-        div{padding:0em; display:inline-block;}
+        body{
+            padding-left:1em;
+            padding-bottom:1em;
+            border: 1px solid}
+        h1{
+            text-align: center;}
+        p{
+            margin:0;}
+        .data{
+            width: 7em; 
+            display: inline-block;
+            font-weight: bold;
+            margin-top: 1.25em;}
+        .isian{
+            display:inline-block;
+            margin-top: 1.25em;
+        }
+        #radiopr{
+            margin-top: 0;}
         </style>
     </head>
     <body>
         <h1>Hubungi Kami</h1>
-            <a><span>Kantor : </span> di jalan belum jadi</a> 
-            <br><a><span>Nomor Telepon :</span> 08XX-XXXX-XXXX</a>
-            <br><a><span>Email : </span>email@contoh.com</a>
+            <p><b>Kantor : </b> di jalan belum jadi</p> 
+            <p><b>Nomor Telepon :</b> 08XX-XXXX-XXXX</p>
+            <p><b>Email : </b>email@contoh.com</p>
         <h1>Kirimkan Pesan</h1>
         
-            <form action="#" method="POST"></form>
-            <span style="width: 7em; display: inline-block;">Nama</span>
+           
+            <span class="data">Nama</span>
             <input name="Nama" type="text" value=""/>
-            <br><span style="width: 7em; display: inline-block;" >Email</span>
+            <br><span class="data" >Email</span>
             <input name="Email" type="email" value=""/>
-            <br><span style="width: 7em; display: inline-block;">Jenis Kelamin</span>
-            <div><input name="JenisKelamin" type="radio" value=""/>Laki-laki
-            <br><input name="JenisKelamin" type="radio" value=""/>Perempuan</div>
-            <br><span style="width: 7em; display: inline-block;" >Pesan Anda</span>
-            <textarea cols="50" rows="5" style="margin-top: 1.25em;"></textarea>
-            <br><button style="margin-top:1.25em; margin-bottom:1.25em;">Kirim</button>
+            <br><span class="data">Jenis Kelamin</span>
+            <div class="isian">
+                <input name="JenisKelamin" type="radio" value=""/>Laki-laki
+                <br><input id="radiopr" name="JenisKelamin" type="radio" value="" />Perempuan
+            </div>
+            <br><span class="data">Pesan Anda</span>
+            <textarea class="isian" cols="50" rows="5"></textarea>
+            <div >
+                <button class="isian">Kirim</button>
+            </div>
         
         <br><a href="index.html">Kembali Ke Index</a>
     </body>
