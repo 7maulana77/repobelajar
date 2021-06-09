@@ -79,3 +79,25 @@ console.log('Indeks Doe '+ indeks)
 
 
 //Soal5
+var tanggal = 08;
+var bulan = 10;
+var tahun = 1994;
+
+switch(bulan) {
+  case 1:   { var strbulan = 'Januari'; break}
+  case 2:   { var strbulan = 'Februari'; break}
+  case 3:   { var strbulan = 'Maret'; break}
+  case 4:   { var strbulan = 'April'; break}
+  case 5:   { var strbulan = 'Mei'; break}
+  case 6:   { var strbulan = 'Juni'; break}
+  case 7:   { var strbulan = 'Juli'; break}
+  case 8:   { var strbulan = 'Agustus'; break}
+  case 9:   { var strbulan = 'September'; break}
+  case 10:  { var strbulan = 'Oktober'; break}
+  case 11:  { var strbulan = 'November'; break}
+  case 12:  { var strbulan = 'Desember'; break}
+  default:  { var strbulan = 'bulan'; break}
+}
+
+console.log(
+    tanggal.toString().concat(" ", strbulan," ", tahun))
