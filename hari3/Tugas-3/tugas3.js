@@ -13,6 +13,7 @@ console.log(
         kataKeempat.toUpperCase()
     )
 )
+
 //Soal2
 var panjangPersegiPanjang = '8'
 var lebarPersegiPanjang = '5'
@@ -54,13 +55,6 @@ console.log('Kata Kelima: ' + fifthWord);
 var nilaiJohn = 80;
 var nilaiDoe = 50;
 
-/*
-if nilai >= 80 indeksnya A
-nilai >= 70 dan nilai < 80 indeksnya B
-nilai >= 60 dan nilai < 70 indeksnya c
-nilai >= 50 dan nilai < 60 indeksnya D
-nilai < 50 indeksnya E*/
-
 var nilai = nilaiJohn
 if (nilai >= 80) {var indeks = 'A'}
 else if (nilai >= 70 && nilai<80) {var indeks = 'B'}
@@ -76,7 +70,6 @@ else if (nilai >=60 && nilai<70) {var indeks = 'C'}
 else if (nilai >=50 && nilai<60) {var indeks = 'D'}
 else if (nilai <50) {var indeks = 'E'}
 console.log('Indeks Doe '+ indeks)
-
 
 //Soal5
 var tanggal = 08;
@@ -98,6 +91,5 @@ switch(bulan) {
   case 12:  { var strbulan = 'Desember'; break}
   default:  { var strbulan = 'bulan'; break}
 }
-
 console.log(
     tanggal.toString().concat(" ", strbulan," ", tahun))
