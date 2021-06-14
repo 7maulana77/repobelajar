@@ -187,18 +187,30 @@
 // var string3 = 'to u'
 // console.log(string1.concat(string2).concat(string3));
 
-// spread operator
-let array1 = ['one', 'two']
-let array2 = ['three', 'four']
-let array3 = ['five', 'six']
+// // spread operator
+// let array1 = ['one', 'two']
+// let array2 = ['three', 'four']
+// let array3 = ['five', 'six']
  
-// ES5 Way / Normal Javascript
-/* 
-var combinedArray = array1.concat(array2).concat(array3)
-console.log(combinedArray) // ['one', 'two', 'three', 'four', 'five', 'six']
-*/
-// ES6 Way 
+// // ES5 Way / Normal Javascript
+// /* 
+// var combinedArray = array1.concat(array2).concat(array3)
+// console.log(combinedArray) // ['one', 'two', 'three', 'four', 'five', 'six']
+// */
+// // ES6 Way 
  
-let combinedArray = [...array1, ...array2, ...array3]
-console.log(combinedArray) // ['one', 'two', 'three', 'four', 'five', 'six']
+// let combinedArray = [...array1, ...array2, ...array3]
+// console.log(combinedArray) // ['one', 'two', 'three', 'four', 'five', 'six']
  
+
+//DILEMA LET CONST
+const  x=1
+if(x===1){
+    let x=2
+   if(x===2){
+       const x=3
+       console.log(x)
+    }
+    console.log(x)
+}
+console.log(x)
